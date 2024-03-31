@@ -20,7 +20,7 @@ const HELLO_FRIEND = "\nHello Old Friend 👋, What's My Itinerary..?\n\n";
     const response = result.response.text();
 
     history.push({ user: query, gemini: response });
-    printToConsole(response);
+    await printToConsole(response);
 
     analysis(); // Loops back to next question
   });
